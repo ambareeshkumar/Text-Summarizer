@@ -8,12 +8,12 @@ projectName = str(input("Enter Project Name :"))
 
 projectFiles = [
     ".github/workflows/",
-    f"src/{projectName}/__int__.py",
-    f"src/{projectName}/components/__int__.py",
-    f"src/{projectName}/utils/__int__.py",
+    f"src/{projectName}/__init__.py",
+    f"src/{projectName}/components/__init__.py",
+    f"src/{projectName}/utils/__init__.py",
     f"src/{projectName}/utils/utils.py",
-    f"src/{projectName}/logging/__int__.py",
-    f"src/{projectName}/config/__int__.py",
+    f"src/{projectName}/logging/__init__.py",
+    f"src/{projectName}/config/__init__.py",
     f"src/{projectName}/config/configuration.py",
     f"src/{projectName}/pipeline/__init__.py",
     f"src/{projectName}/entity/__init__.py",
