@@ -28,7 +28,7 @@ class ColoredFormatter(logging.Formatter):
 logging.basicConfig(
     filename=LOG_FILE_PATH,
     level=logging.INFO,
-    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
+    format="[%(asctime)s] %(lineno)d - %(levelname)s - %(message)s"
 )
 
 
@@ -37,7 +37,7 @@ console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.DEBUG)
 
 # Set the formatter for the console handler
-console_formatter = ColoredFormatter("[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s")
+console_formatter = ColoredFormatter("[%(asctime)s] %(lineno)d - %(levelname)s  - %(message)s")
 console_handler.setFormatter(console_formatter)
 
 # Add the console handler to the root logger

@@ -4,11 +4,11 @@ import yaml
 from box import ConfigBox
 from pathlib import Path
 from typing import Any
-from ensure import ensure_annotations
+# from ensure import ensure_annotations
 
 from TextSummarizer.logging import logging
 
-@ensure_annotations
+# @ensure_annotations
 def read_yaml(file_path):
     """
     Read yaml file and return a ConfigBox object.
@@ -27,7 +27,7 @@ def read_yaml(file_path):
         logging.info(f"Could not find yaml file: {file_path}")
         raise ValueError("Could not find yaml file: {}".format(file_path))
 
-@ensure_annotations
+# @ensure_annotations
 def create_directories(path_to_directories: list,verbose=True):
     """
     Create directories
@@ -46,7 +46,7 @@ def create_directories(path_to_directories: list,verbose=True):
         logging.info(f"Could not create directory {path}")
         raise ValueError("Could not create directory: {}".format(path))
 
-@ensure_annotations
+# @ensure_annotations
 def get_size(path:Path) -> str:
     """
     :param path:
